@@ -1,67 +1,154 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAP Garland, LLC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOT ULTIX TERRA LLC</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f4f6f8;
+      color:#333;
+      line-height:1.6;
     }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+    header{
+      background:url('https://avatars.mds.yandex.net/i?id=560ac41dc360fc57adff70211937cd9f448ab460-8959338-images-thumbs&ref=rim&n=33&w=400&h=400') center/cover no-repeat;
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
+      position:relative;
     }
-    section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+    header::after{
+      content:'';
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      background:rgba(0,0,0,0.5);
     }
-    h1, h2 {
-      color: #003366;
+    header h1,header p{
+      position:relative;
+      z-index:2;
     }
-    .contact {
-      background: #fff;
-      padding: 20px;
-      border-left: 5px solid #003366;
-      margin-top: 30px;
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+      letter-spacing:2px;
     }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
+    header p{font-size:1.2rem;opacity:0.9;}
+    section{
+      max-width:1200px;
+      margin:50px auto;
+      padding:20px;
+    }
+    .flex{display:flex;gap:30px;flex-wrap:wrap;align-items:center;}
+    .text,.image{flex:1 1 45%;}
+    .image img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    h2{
+      font-size:2rem;
+      color:#1d3557;
+      margin-bottom:15px;
+    }
+    .cta{text-align:center;margin:40px 0;}
+    .cta a{
+      background:#1d3557;
+      color:#fff;
+      text-decoration:none;
+      padding:15px 35px;
+      border-radius:30px;
+      font-size:1rem;
+      transition:all 0.3s ease;
+    }
+    .cta a:hover{background:#457b9d;}
+    footer{
+      background:#1d3557;
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+    }
+    footer p{margin:5px 0;}
+    @media(max-width:768px){
+      header h1{font-size:2.2rem;}
+      .flex .text,.flex .image{flex:1 1 100%;}
     }
   </style>
 </head>
 <body>
+  <!-- Hero -->
   <header>
-    <h1>CAP Garland, LLC</h1>
-    <p>Private Investment Fund</p>
+    <h1>DOT ULTIX TERRA LLC</h1>
+    <p>Innovative Solutions for a Better Tomorrow</p>
   </header>
 
+  <!-- Who We Are -->
   <section>
-    <h2>About Us</h2>
-    <p>CAP Garland, LLC is a Washington-based private investment fund focused on delivering value through diversified investment strategies.</p>
-
-    <h2>Contact</h2>
-    <div class="contact">
-      <p><strong>Address:</strong> 915 W 2nd Ave, Spokane, WA 99201</p>
-      <p><strong>Email:</strong> <a href="mailto:ryanberg@capgarland.shop">ryanberg@capgarland.shop</a></p>
-      <p><strong>Phone:</strong> (509) 822-3850</p>
+    <div class="flex">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>DOT ULTIX TERRA LLC is a company based in Fresno, CA, specializing in innovative products and services designed to meet the needs of modern businesses and communities.</p>
+      </div>
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=7a801904886c0e2d7911ac5127cc1c39b2ba44d1-9856853-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Who We Are">
+      </div>
     </div>
   </section>
 
+  <!-- Vision -->
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://amppa.ru/upload/iblock/68e/3lbl7nj0strsdkeixc4b6paedxwgxi2z/1422.jpg" alt="Vision">
+      </div>
+      <div class="text">
+        <h2>Our Vision</h2>
+        <p>Our vision is to be a trusted leader in delivering solutions that positively impact our clients, the environment, and the community at large.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section>
+    <div class="flex">
+      <div class="text">
+        <h2>Why Choose Us</h2>
+        <p>We pride ourselves on integrity, innovation, and customer-centric strategies that guarantee results and long-term partnerships.</p>
+      </div>
+      <div class="image">
+        <img src="https://z-plus.ru/wa-data/public/shop/products/14/53/115314/images/266587/266587.970.jpg" alt="Why Choose Us">
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section>
+    <div class="flex">
+      <div class="image">
+        <img src="https://avatars.mds.yandex.net/i?id=560ac41dc360fc57adff70211937cd9f448ab460-8959338-images-thumbs&ref=rim&n=33&w=400&h=400" alt="Our Approach">
+      </div>
+      <div class="text">
+        <h2>Our Approach</h2>
+        <p>We work closely with our clients to develop tailored solutions, combining advanced technologies with sustainable practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <a href="mailto:contact@dotterra.shop">Contact Us Today</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 CAP Garland, LLC. All rights reserved.
+    <p><strong>Email:</strong> contact@dotterra.shop</p>
+    <p><strong>Phone:</strong> +1 984 370 9586</p>
+    <p><strong>Address:</strong> Fresno, CA 93726, USA</p>
+    <p>&copy; 2025 DOT ULTIX TERRA LLC. All rights reserved.</p>
   </footer>
 </body>
 </html>
